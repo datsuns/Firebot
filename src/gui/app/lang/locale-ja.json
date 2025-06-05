@@ -78,5 +78,18 @@
   "NEW": "新規",
   "CONNECTED": "接続済み",
   "DISCONNECTED": "切断済み",
-  "RUNNING_NOT_CONNECTED": "準備完了しましたが、現在接続されていません。"
+  "RUNNING_NOT_CONNECTED": "準備完了しましたが、現在接続されていません。",
+  "SETTINGS": {
+    "GENERAL": {
+      "THEME": {
+        "NAME": "テーマ",
+        "DESCRIPTION": "Firebotのカラーテーマを選択します"
+      },
+      "LANGUAGE": {
+        "NAME": "言語",
+        "DESCRIPTION": "Firebotのインターフェースで使用する言語を変更します。"
+      }
+    }
+  }
 }
+

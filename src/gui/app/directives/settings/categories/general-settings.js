@@ -5,11 +5,11 @@
         template: `
                 <div>
                     <firebot-setting
-                        name="Theme"
-                        description="Choose your color theme for Firebot!"
+                        name="{{'SETTINGS.GENERAL.THEME.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.THEME.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
-                            aria-label="App Theme"
+                            aria-label="{{'SETTINGS.GENERAL.THEME.NAME' | translate }}"
                             options="['Light', 'Midnight', 'Obsidian']"
                             ng-init="selectedTheme = settings.getSetting('Theme')"
                             selected="selectedTheme"
@@ -19,11 +19,11 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Language"
-                        description="Change the language used for Firebot's interface."
+                        name="{{'SETTINGS.GENERAL.LANGUAGE.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.LANGUAGE.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
-                            aria-label="UI Language"
+                            aria-label="{{'SETTINGS.GENERAL.LANGUAGE.NAME' | translate }}"
                             options="availableLanguages"
                             ng-init="selectedLang = settings.getSetting('UiLanguage')"
                             selected="selectedLang"

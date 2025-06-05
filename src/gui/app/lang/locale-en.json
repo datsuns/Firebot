@@ -78,5 +78,18 @@
   "NEW": "New",
   "CONNECTED": "Connected",
   "DISCONNECTED": "Disconnected",
-  "RUNNING_NOT_CONNECTED": "Ready, but nothing is connected at this time."
+  "RUNNING_NOT_CONNECTED": "Ready, but nothing is connected at this time.",
+  "SETTINGS": {
+    "GENERAL": {
+      "THEME": {
+        "NAME": "Theme",
+        "DESCRIPTION": "Choose your color theme for Firebot!"
+      },
+      "LANGUAGE": {
+        "NAME": "Language",
+        "DESCRIPTION": "Change the language used for Firebot's interface."
+      }
+    }
+  }
 }
+
