@@ -76,7 +76,7 @@
                     prefix: "lang/locale-",
                     suffix: ".json"
                 })
-                .preferredLanguage("en");
+                .preferredLanguage(firebotAppDetails.locale);
         }
     ]);
 
@@ -137,9 +137,14 @@
         videoService,
         replaceVariableService,
         variableMacroService,
-        uiExtensionsService
+        uiExtensionsService,
+        $translate
     ) {
         // 'chatMessagesService' and 'videoService' are included so they're instantiated on app start
+
+        const language = settingsService.getSetting("UiLanguage") || firebotAppDetails.locale;
+        $translate.use(language);
+        moment.locale(language);
 
         connectionService.loadProfiles();
 
@@ -421,6 +426,10 @@
         // Apply Theme
         $scope.appTheme = function() {
             return settingsService.getSetting("Theme");
+        };
+
+        $scope.appLanguage = function() {
+            return settingsService.getSetting("UiLanguage") || 'en';
         };
 
         $rootScope.showSpinner = false;

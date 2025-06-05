@@ -90,6 +90,7 @@ export type FirebotSettingsTypes = {
     WebServerPort: number;
     WhileLoopEnabled: boolean;
     WysiwygBackground: "black" | "white";
+    UiLanguage: string;
 }
 
 export const FirebotGlobalSettings: Partial<Record<keyof FirebotSettingsTypes, boolean>> = {
@@ -199,7 +200,8 @@ export const FirebotSettingsDefaults: FirebotSettingsTypes = {
     WebOnlineCheckin: false,
     WebServerPort: 7472,
     WhileLoopEnabled: false,
-    WysiwygBackground: "white"
+    WysiwygBackground: "white",
+    UiLanguage: "en"
 };
 
 /** Anything in `SettingsTypes` not listed here will resolve to "/settings/settingName" (e.g. "/settings/autoFlagBots") */
@@ -217,5 +219,6 @@ export const FirebotSettingsPaths: Partial<Record<keyof FirebotSettingsTypes, st
     ShowActivityFeed: "/settings/activityFeed",
     ShowChatViewerList: "/settings/chatUsersList",
     SoundsEnabled: "/settings/sounds",
-    ViewerListPageSize: "/settings/viewerListDatabase/pageSize"
+    ViewerListPageSize: "/settings/viewerListDatabase/pageSize",
+    UiLanguage: "/settings/uiLanguage"
 };
