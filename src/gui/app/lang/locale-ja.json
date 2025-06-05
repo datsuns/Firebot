@@ -147,7 +147,53 @@
     "NO_QUOTES": "引用はまだ作成されていません！"
   },
   "SETTINGS_PAGE": {
-    "CLOSE": "閉じる"
+    "CLOSE": "閉じる",
+    "CATEGORIES": {
+      "GENERAL": {
+        "NAME": "一般",
+        "DESCRIPTION": "外観やベータ通知などの設定を行います。"
+      },
+      "SETUPS": {
+        "NAME": "セットアップ",
+        "DESCRIPTION": "作成した設定を共有したり、他の人の設定をインポートしたりできます。"
+      },
+      "TRIGGERS": {
+        "NAME": "トリガー",
+        "DESCRIPTION": "コマンドやイベントなど、各種トリガーの動作を調整します。"
+      },
+      "EFFECTS": {
+        "NAME": "エフェクト",
+        "DESCRIPTION": "エフェクトに関するさまざまなオプション。"
+      },
+      "DATABASE": {
+        "NAME": "データベース",
+        "DESCRIPTION": "視聴者データベースのオプションとツール。"
+      },
+      "OVERLAY": {
+        "NAME": "オーバーレイ",
+        "DESCRIPTION": "フォントの追加やインスタンスの作成など、オーバーレイの設定。"
+      },
+      "INTEGRATIONS": {
+        "NAME": "連携",
+        "DESCRIPTION": "Firebotを外部ツールやアプリと連携させます。"
+      },
+      "TTS": {
+        "NAME": "TTS",
+        "DESCRIPTION": "既定のTTS音声に関する設定。"
+      },
+      "BACKUPS": {
+        "NAME": "バックアップ",
+        "DESCRIPTION": "データを失わないよう、バックアップの管理と設定を行います。"
+      },
+      "SCRIPTS": {
+        "NAME": "スクリプト",
+        "DESCRIPTION": "スクリプト設定や起動スクリプトの追加などを行います。"
+      },
+      "ADVANCED": {
+        "NAME": "高度な設定",
+        "DESCRIPTION": "デバッグモードやwhileループなど、上級者向け設定。"
+      }
+    }
   }
 }
 

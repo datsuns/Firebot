@@ -8,68 +8,68 @@
 
             $scope.categories = [
                 {
-                    name: "General",
-                    description: "Various settings for appearance, beta notifications, and more.",
+                    name: "SETTINGS_PAGE.CATEGORIES.GENERAL.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.GENERAL.DESCRIPTION",
                     icon: "fa-sliders-v-square",
                     template: "<general-settings />"
                 },
                 {
-                    name: "Setups",
-                    description: "Share your best creations with others. Or import others!",
+                    name: "SETTINGS_PAGE.CATEGORIES.SETUPS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.SETUPS.DESCRIPTION",
                     icon: "fa-box-full",
                     template: "<setups-settings />"
                 },
                 {
-                    name: "Triggers",
-                    description: "Tweak the behaviors of various triggers (commands, events, etc)",
+                    name: "SETTINGS_PAGE.CATEGORIES.TRIGGERS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.TRIGGERS.DESCRIPTION",
                     icon: "fa-bolt",
                     template: "<trigger-settings />"
                 },
                 {
-                    name: "Effects",
-                    description: "Various options for effects",
+                    name: "SETTINGS_PAGE.CATEGORIES.EFFECTS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.EFFECTS.DESCRIPTION",
                     icon: "fa-magic",
                     template: "<effect-settings />"
                 },
                 {
-                    name: "Database",
-                    description: "Options and tools for the viewer database.",
+                    name: "SETTINGS_PAGE.CATEGORIES.DATABASE.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.DATABASE.DESCRIPTION",
                     icon: "fa-database",
                     template: "<database-settings />"
                 },
                 {
-                    name: "Overlay",
-                    description: "Add new fonts, create new instances, and other overlay settings.",
+                    name: "SETTINGS_PAGE.CATEGORIES.OVERLAY.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.OVERLAY.DESCRIPTION",
                     icon: "fa-tv",
                     template: "<overlay-settings />"
                 },
                 {
-                    name: "Integrations",
-                    description: "Link Firebot to a growing list of third party tools and apps.",
+                    name: "SETTINGS_PAGE.CATEGORIES.INTEGRATIONS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.INTEGRATIONS.DESCRIPTION",
                     icon: "fa-globe",
                     template: "<integration-settings />"
                 },
                 {
-                    name: "TTS",
-                    description: "Settings for the default TTS voice.",
+                    name: "SETTINGS_PAGE.CATEGORIES.TTS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.TTS.DESCRIPTION",
                     icon: "fa-volume",
                     template: "<tts-settings />"
                 },
                 {
-                    name: "Backups",
-                    description: "Manage backups and backup settings to ensure your data is never lost.",
+                    name: "SETTINGS_PAGE.CATEGORIES.BACKUPS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.BACKUPS.DESCRIPTION",
                     icon: "fa-file-archive",
                     template: "<backups-settings />"
                 },
                 {
-                    name: "Scripts",
-                    description: "Configure script settings, add start up scripts, and more.",
+                    name: "SETTINGS_PAGE.CATEGORIES.SCRIPTS.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.SCRIPTS.DESCRIPTION",
                     icon: "fa-code",
                     template: "<scripts-settings />"
                 },
                 {
-                    name: "Advanced",
-                    description: "Various advanced settings such as debug mode, while loops, and other tools",
+                    name: "SETTINGS_PAGE.CATEGORIES.ADVANCED.NAME",
+                    description: "SETTINGS_PAGE.CATEGORIES.ADVANCED.DESCRIPTION",
                     icon: "fa-tools",
                     template: "<advanced-settings />"
                 }
