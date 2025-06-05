@@ -2,5 +2,81 @@
   "MAIN": {
     "MANAGE_LOGINS": "ログイン管理",
     "LOADING": "読み込み中..."
-  }
+  },
+  "SIDEBAR": {
+    "CHAT": {
+      "CHAT": "チャット",
+      "COMMANDS": "コマンド",
+      "CHAT_FEED": "ダッシュボード"
+    },
+    "OTHER": {
+      "OTHER": "その他",
+      "EVENTS": "イベント",
+      "PRESET_EFFECT_LISTS": "プリセットエフェクトリスト",
+      "EFFECT_QUEUES": "エフェクトキュー",
+      "TIME_BASED": "タイムベース",
+      "HOTKEYS": "ホットキー",
+      "CHANNELREWARDS": "チャンネル報酬",
+      "COUNTERS": "カウンター"
+    },
+    "MANAGEMENT": {
+      "MANAGEMENT": "管理",
+      "VIEWER_GROUPS": "視聴者グループ",
+      "VIEWER_ROLES": "役割とランク",
+      "MODERATION": "モデレーション",
+      "VIEWERS": "視聴者",
+      "SETTINGS": "設定",
+      "UPDATES": "アップデート",
+      "CURRENCY": "通貨",
+      "QUOTES": "引用"
+    },
+    "CONNECTIONS": {
+      "CONNECTIONS": "接続",
+      "TOGGLE": "クリックして接続を切り替え",
+      "OPEN_CONNECTION_PANNEL": "接続パネルを開く"
+    },
+    "ABOUT": "情報"
+  },
+  "BUTTONS": {
+    "BUTTONS": "ボタン",
+    "CHANGE_BOARD": {
+      "CHANGE_BOARD": "ボードを変更",
+      "ADD_NEW_BOARD": "新しいボードを追加",
+      "DELETE_BOARD": "ボードを削除",
+      "RESYNC_BOARD": "ボードを再同期"
+    },
+    "MIXER_STUDIO": "Mixer Studio",
+    "SCENES": "シーン",
+    "EDIT": "編集",
+    "SEARCH_CONTROLS": "コントロールを検索",
+    "LOADING_BOARDS": "ボードを読み込み中...",
+    "ADD_FIRST_BOARD": "最初のボードを追加",
+    "COULD_NOT_AUTOSELECT": "自動でボードを選択できませんでした。上のドロップダウンからボードを選択してください。",
+    "ID": "ID",
+    "NAME": "名前",
+    "COST": "コスト"
+  },
+  "LIVE_EVENTS": {
+    "EVENTS": "イベント",
+    "EVENT_GROUPS": "イベントグループ",
+    "CHANGE_GROUP": "グループを変更",
+    "CHANGE_EVENT_GROUP": {
+      "CHANGE_BOARD": "イベントグループを変更",
+      "ADD_NEW_EVENT_GROUP": "新しいイベントグループを追加",
+      "EDIT_EVENT_GROUP": "イベントグループを編集",
+      "DELETE_EVENT_GROUP": "イベントグループを削除"
+    },
+    "EDIT": "編集",
+    "SEARCH_EVENTS": "イベントを検索",
+    "ADD_NEW_EVENT": "新しいイベントを追加",
+    "ADD_FIRST_EVENT_GROUP": "最初のイベントグループを追加",
+    "COULD_NOT_AUTOSELECT": "イベントグループを自動選択できませんでした。ドロップダウンから選択してください。",
+    "ID": "ID",
+    "NAME": "名前",
+    "TYPE": "タイプ"
+  },
+  "NEW": "新規",
+  "CONNECTED": "接続済み",
+  "DISCONNECTED": "切断済み",
+  "RUNNING_NOT_CONNECTED": "準備完了しましたが、現在接続されていません。"
 }

@@ -20,14 +20,14 @@
 
                     <firebot-setting
                         name="Language"
-                        description="Change the language used for Firebot's interface. Requires restart."
+                        description="Change the language used for Firebot's interface."
                     >
                         <firebot-select
                             aria-label="UI Language"
                             options="availableLanguages"
                             ng-init="selectedLang = settings.getSetting('UiLanguage')"
                             selected="selectedLang"
-                            on-update="settings.saveSetting('UiLanguage', option)"
+                            on-update="updateUiLanguage(option)"
                             right-justify="true"
                         />
                     </firebot-setting>
@@ -208,11 +208,17 @@
                     </firebot-setting>
                 </div>
           `,
-        controller: function ($rootScope, $scope, settingsService, $q) {
+        controller: function ($rootScope, $scope, settingsService, $q, $translate) {
             $scope.openLink = $rootScope.openLinkExternally;
             $scope.settings = settingsService;
 
             $scope.availableLanguages = { en: 'English', ja: '日本語' };
+
+            $scope.updateUiLanguage = (lang) => {
+                settingsService.saveSetting('UiLanguage', lang);
+                $translate.use(lang);
+                moment.locale(lang);
+            };
 
             $scope.audioOutputDevices = [
                 {
