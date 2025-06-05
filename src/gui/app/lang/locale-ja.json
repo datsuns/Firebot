@@ -88,6 +88,47 @@
       "LANGUAGE": {
         "NAME": "言語",
         "DESCRIPTION": "Firebotのインターフェースで使用する言語を変更します。"
+      },
+      "MINIMIZE_TO_TRAY": {
+        "NAME": "トレイに最小化",
+        "DESCRIPTION": "最小化した際、Firebotをタスクバーではなくトレイに格納します"
+      },
+      "CONNECTION_SOUNDS": {
+        "NAME": "接続音",
+        "DESCRIPTION": "Firebotが接続・切断されたときに通知音を鳴らします"
+      },
+      "SOUND_OUTPUT_DEVICE": {
+        "NAME": "サウンド出力デバイス",
+        "DESCRIPTION": "アプリの音声（接続音など）やサウンドエフェクトを再生するデバイスを変更します。",
+        "SYSTEM_DEFAULT": "システム既定",
+        "SEND_TO_OVERLAY": "オーバーレイへ送信"
+      },
+      "BETA_NOTIFICATIONS": {
+        "NAME": "ベータ通知",
+        "DESCRIPTION": "Firebotは安定版に自動更新されますが、ベータ版や大きな新リリースには自動更新されません。新しいベータ版が公開された際に通知を受け取りたい場合は有効にしてください。"
+      },
+      "FEATURE_MY_STREAM": {
+        "NAME": "Firebot.appでストリームを紹介",
+        "DESCRIPTION_PREFIX": "この設定を有効にすると、次のサイトにあなたのストリームが表示されます",
+        "LINK_LABEL": "Firebotのウェブサイト",
+        "AFTER_LINK": "ライブ中に。"
+      },
+      "LIVE_STREAM_STATS": {
+        "NAME": "ライブストリーム統計",
+        "DESCRIPTION": "ライブ中に上部バーへ表示する統計情報を選択します。",
+        "UPTIME": "配信時間",
+        "VIEWER_COUNT": "視聴者数",
+        "HYPE_TRAINS": "ハイプトレイン",
+        "AD_BREAKS": "広告ブレイク"
+      },
+      "INACTIVE_VIEWER_TIME": {
+        "NAME": "非アクティブ判定時間",
+        "DESCRIPTION": "最後のチャットから非アクティブと判断されるまでの時間です。",
+        "MINUTES": "分"
+      },
+      "OPEN_STREAM_PREVIEW_ON_LAUNCH": {
+        "NAME": "起動時にストリームプレビューを開く",
+        "DESCRIPTION": "Firebot起動時に自動的にストリームプレビューウィンドウを開きます。"
       }
     }
   },
