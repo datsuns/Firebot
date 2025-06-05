@@ -90,6 +90,23 @@
         "DESCRIPTION": "Firebotのインターフェースで使用する言語を変更します。"
       }
     }
+  },
+  "CURRENCY_PAGE": {
+    "ADD_CURRENCY": "通貨を追加",
+    "NO_CURRENCY_SAVED": "通貨が保存されていません。作成しましょう！ :)"
+  },
+  "HOTKEYS_PAGE": {
+    "NEW_HOTKEY": "新しいホットキー",
+    "NO_HOTKEYS_SAVED": "ホットキーが保存されていません。作成しましょう！ :)"
+  },
+  "QUOTES_PAGE": {
+    "ADD_QUOTE": "引用を追加",
+    "IMPORT_QUOTES": "引用をインポート",
+    "SEARCH_PLACEHOLDER": "引用を検索...",
+    "NO_QUOTES": "引用はまだ作成されていません！"
+  },
+  "SETTINGS_PAGE": {
+    "CLOSE": "閉じる"
   }
 }
 
