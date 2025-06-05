@@ -147,7 +147,53 @@
     "NO_QUOTES": "No quotes created yet!"
   },
   "SETTINGS_PAGE": {
-    "CLOSE": "Close"
+    "CLOSE": "Close",
+    "CATEGORIES": {
+      "GENERAL": {
+        "NAME": "General",
+        "DESCRIPTION": "Various settings for appearance, beta notifications, and more."
+      },
+      "SETUPS": {
+        "NAME": "Setups",
+        "DESCRIPTION": "Share your best creations with others. Or import others!"
+      },
+      "TRIGGERS": {
+        "NAME": "Triggers",
+        "DESCRIPTION": "Tweak the behaviors of various triggers (commands, events, etc)"
+      },
+      "EFFECTS": {
+        "NAME": "Effects",
+        "DESCRIPTION": "Various options for effects"
+      },
+      "DATABASE": {
+        "NAME": "Database",
+        "DESCRIPTION": "Options and tools for the viewer database."
+      },
+      "OVERLAY": {
+        "NAME": "Overlay",
+        "DESCRIPTION": "Add new fonts, create new instances, and other overlay settings."
+      },
+      "INTEGRATIONS": {
+        "NAME": "Integrations",
+        "DESCRIPTION": "Link Firebot to a growing list of third party tools and apps."
+      },
+      "TTS": {
+        "NAME": "TTS",
+        "DESCRIPTION": "Settings for the default TTS voice."
+      },
+      "BACKUPS": {
+        "NAME": "Backups",
+        "DESCRIPTION": "Manage backups and backup settings to ensure your data is never lost."
+      },
+      "SCRIPTS": {
+        "NAME": "Scripts",
+        "DESCRIPTION": "Configure script settings, add start up scripts, and more."
+      },
+      "ADVANCED": {
+        "NAME": "Advanced",
+        "DESCRIPTION": "Various advanced settings such as debug mode, while loops, and other tools"
+      }
+    }
   }
 }
 
