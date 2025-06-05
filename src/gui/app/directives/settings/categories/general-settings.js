@@ -33,33 +33,33 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Minimize to Tray"
-                        description="When minimized, Firebot will minimize to tray instead of task bar"
+                        name="{{'SETTINGS.GENERAL.MINIMIZE_TO_TRAY.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.MINIMIZE_TO_TRAY.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('MinimizeToTray')"
                             on-toggle="settings.saveSetting('MinimizeToTray', !settings.getSetting('MinimizeToTray'))"
                             font-size="40"
-                            aria-label="Minimize to Tray, When minimized, Firebot will minimize to tray instead of task bar"
+                            aria-label="{{'SETTINGS.GENERAL.MINIMIZE_TO_TRAY.DESCRIPTION' | translate}}"
                             accessibility-label="(settings.getSetting('MinimizeToTray') ? 'Enabled' : 'Disabled') + ' When minimized, Firebot will minimize to tray instead of task bar'"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Connection Sounds"
-                        description="Get audible alerts when Firebot connects or disconnects."
+                        name="{{'SETTINGS.GENERAL.CONNECTION_SOUNDS.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.CONNECTION_SOUNDS.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('SoundsEnabled') === 'On'"
                             on-toggle="settings.saveSetting('SoundsEnabled', settings.getSetting('SoundsEnabled') === 'On' ? 'Off' : 'On')"
                             font-size="40"
-                            aria-label="Connection Sounds: Get audible alerts when Firebot connects or disconnects"
+                            aria-label="{{'SETTINGS.GENERAL.CONNECTION_SOUNDS.DESCRIPTION' | translate}}"
                             accessibility-label="(settings.getSetting('SoundsEnabled') === 'On' ? 'Enabled' : 'Disabled') + ' Get audible alerts when Firebot connects or disconnects.'"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Sound Output Device"
+                        name="{{'SETTINGS.GENERAL.SOUND_OUTPUT_DEVICE.NAME' | translate }}"
                         description="Change what output device app sounds (ie connect/disconnect sounds) and Play Sound Effects are sent to."
                     >
                         <div class="dropdown">
@@ -85,41 +85,39 @@
                                 <li class="divider"></li>
                                 <li
                                     role="menuitem"
-                                    ng-click="settings.saveSetting('AudioOutputDevice', {label: 'Send To Overlay', deviceId: 'overlay'})"
+                                    ng-click="settings.saveSetting('AudioOutputDevice', {label: ('SETTINGS.GENERAL.SOUND_OUTPUT_DEVICE.SEND_TO_OVERLAY' | translate), deviceId: 'overlay'})"
                                 >
-                                    <a href>Send To Overlay</a>
+                                    <a href>{{'SETTINGS.GENERAL.SOUND_OUTPUT_DEVICE.SEND_TO_OVERLAY' | translate}}</a>
                                 </li>
                             </ul>
                         </div>
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Beta Notifications"
-                        description="Firebot automatically updates to new stable versions. It does not automatically update to betas or major new
-                        releases however. Enable if you want to be notified of new beta releases."
+                        name="{{'SETTINGS.GENERAL.BETA_NOTIFICATIONS.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.BETA_NOTIFICATIONS.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('NotifyOnBeta')"
                             on-toggle="settings.saveSetting('NotifyOnBeta', !settings.getSetting('NotifyOnBeta'))"
                             font-size="40"
-                            aria-label="Firebot automatically updates to new stable versions. It does not automatically update to betas or major new
-                        releases however. Enable if you want to be notified of new beta releases."
+                            aria-label="{{'SETTINGS.GENERAL.BETA_NOTIFICATIONS.DESCRIPTION' | translate }}"
                             accessibility-label="(settings.getSetting('NotifyOnBeta') ? 'Enabled' : 'Disabled') + ' Firebot automatically updates to new stable versions. It does not automatically update to betas or major new
                         releases however. Enable if you want to be notified of new beta releases.'"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Feature My Stream on Firebot.app"
-                        description=""
+                        name="{{'SETTINGS.GENERAL.FEATURE_MY_STREAM.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.FEATURE_MY_STREAM.DESCRIPTION_PREFIX' | translate}}"
                     >
 
                         <setting-description-addon>
                             <div style="margin-top: 10px;">
-                                Enable this setting to have your stream displayed on <a
+                                <span>{{'SETTINGS.GENERAL.FEATURE_MY_STREAM.DESCRIPTION_PREFIX' | translate}} <a
                                     class="clickable"
                                     ng-click="openLink('https://firebot.app/watch')"
-                                >Firebot's website</a> when you're live.
+                                >{{'SETTINGS.GENERAL.FEATURE_MY_STREAM.LINK_LABEL' | translate}}</a> {{'SETTINGS.GENERAL.FEATURE_MY_STREAM.AFTER_LINK' | translate}}
                             </div>
                         </setting-description-addon>
 
@@ -127,53 +125,53 @@
                             toggle-model="settings.getSetting('WebOnlineCheckin')"
                             on-toggle="settings.saveSetting('WebOnlineCheckin', !settings.getSetting('WebOnlineCheckin'))"
                             font-size="40"
-                            aria-label="Enable this setting to have your stream displayed on Firebot's website when you're live"
+                            aria-label="{{'SETTINGS.GENERAL.FEATURE_MY_STREAM.DESCRIPTION_PREFIX' | translate}} {{'SETTINGS.GENERAL.FEATURE_MY_STREAM.LINK_LABEL' | translate}} {{'SETTINGS.GENERAL.FEATURE_MY_STREAM.AFTER_LINK' | translate}}"
                             accessibility-label="(settings.getSetting('WebOnlineCheckin') ? 'Enabled' : 'Disabled') + ' Enable this setting to have your stream displayed on Firebot\\'s website when you\\'re live'"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Live Stream Stats"
-                        description="Select which stream stats show in the top bar when live."
+                        name="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.DESCRIPTION' | translate }}"
                     >
                         <div>
                             <label class="control-fb control--checkbox"
-                                >Uptime
+                                >{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.UPTIME' | translate}}
                                 <input
                                     type="checkbox"
                                     ng-click="settings.saveSetting('ShowUptimeStat', !settings.getSetting('ShowUptimeStat'))"
                                     ng-checked="settings.getSetting('ShowUptimeStat')"
-                                    aria-label="Uptime"
+                                    aria-label="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.UPTIME' | translate}}"
                                 />
                                 <div class="control__indicator"></div>
                             </label>
                             <label class="control-fb control--checkbox"
-                                >Viewer count
+                                >{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.VIEWER_COUNT' | translate}}
                                 <input
                                     type="checkbox"
                                     ng-click="settings.saveSetting('ShowViewerCountStat', !settings.getSetting('ShowViewerCountStat'))"
                                     ng-checked="settings.getSetting('ShowViewerCountStat')"
-                                    aria-label="Viewer count"
+                                    aria-label="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.VIEWER_COUNT' | translate}}"
                                 />
                                 <div class="control__indicator"></div>
                             </label>
                             <label class="control-fb control--checkbox"
-                                >Hype Trains
+                                >{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.HYPE_TRAINS' | translate}}
                                 <input
                                     type="checkbox"
                                     ng-click="settings.saveSetting('ShowHypeTrainIndicator', !settings.getSetting('ShowHypeTrainIndicator'))"
                                     ng-checked="settings.getSetting('ShowHypeTrainIndicator')"
-                                    aria-label="Hype Trains"
+                                    aria-label="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.HYPE_TRAINS' | translate}}"
                                 />
                                 <div class="control__indicator"></div>
                             </label>
                             <label class="control-fb control--checkbox"
-                                >Ad Breaks
+                                >{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.AD_BREAKS' | translate}}
                                 <input
                                     type="checkbox"
                                     ng-click="settings.saveSetting('ShowAdBreakIndicator', !settings.getSetting('ShowAdBreakIndicator'))"
                                     ng-checked="settings.getSetting('ShowAdBreakIndicator')"
-                                    aria-label="Ad Breaks"
+                                    aria-label="{{'SETTINGS.GENERAL.LIVE_STREAM_STATS.AD_BREAKS' | translate}}"
                                 />
                                 <div class="control__indicator"></div>
                             </label>
@@ -181,8 +179,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Inactive Viewer Time"
-                        description="The amount of time it takes for an active viewer to be marked as inactive after their last chat message."
+                        name="{{'SETTINGS.GENERAL.INACTIVE_VIEWER_TIME.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.INACTIVE_VIEWER_TIME.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="[5,10,15,20,25,30,35,40,45,50,55,60]"
@@ -190,20 +188,20 @@
                             selected="selectedTimeout"
                             on-update="setActiveChatUserTimeout(option)"
                             right-justify="true"
-                            aria-label="Choose your Inactive Viewer Time"
+                            aria-label="{{'SETTINGS.GENERAL.INACTIVE_VIEWER_TIME.NAME' | translate}}"
                         />
-                        <span> minutes</span>
+                        <span> {{'SETTINGS.GENERAL.INACTIVE_VIEWER_TIME.MINUTES' | translate}}</span>
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Open Stream Preview on Launch"
-                        description="Automatically open the Stream Preview window when Firebot launches."
+                        name="{{'SETTINGS.GENERAL.OPEN_STREAM_PREVIEW_ON_LAUNCH.NAME' | translate }}"
+                        description="{{'SETTINGS.GENERAL.OPEN_STREAM_PREVIEW_ON_LAUNCH.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('OpenStreamPreviewOnLaunch')"
                             on-toggle="settings.saveSetting('OpenStreamPreviewOnLaunch', !settings.getSetting('OpenStreamPreviewOnLaunch'))"
                             font-size="40"
-                            accessibility-label="(settings.getSetting('OpenStreamPreviewOnLaunch') ? 'Enabled' : 'Disabled') + ' Stream Preview on Launch'"
+                            accessibility-label="(settings.getSetting('OpenStreamPreviewOnLaunch') ? 'Enabled' : 'Disabled') + ' ' + ('SETTINGS.GENERAL.OPEN_STREAM_PREVIEW_ON_LAUNCH.NAME' | translate)"
                         />
                     </firebot-setting>
                 </div>
@@ -222,7 +220,7 @@
 
             $scope.audioOutputDevices = [
                 {
-                    label: "System Default",
+                    label: $translate.instant('SETTINGS.GENERAL.SOUND_OUTPUT_DEVICE.SYSTEM_DEFAULT'),
                     deviceId: "default"
                 }
             ];
