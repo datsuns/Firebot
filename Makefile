@@ -1,4 +1,4 @@
-.PHONY: setup build start clean
+.PHONY: setup build start clean secrets
 
 setup:
 	npm run setup
@@ -11,3 +11,6 @@ start:
 
 clean:
 	npx grunt cleanup
+
+secrets:
+	cp src/secrets.template.json src/secrets.json

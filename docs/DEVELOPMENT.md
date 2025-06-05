@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. Run `make setup` to install dependencies.
-2. Copy `src/secrets.template.json` to `src/secrets.json` and fill in each field.
+2. Generate `src/secrets.json` with `make secrets` and fill in each field.
    This file must live alongside `secrets.template.json` inside the `src` folder.
 3. Start Firebot in development mode with `make start`.
 
