@@ -1,10 +1,10 @@
 <div class="p-6 mx-0">
-    <button class="btn btn-primary" ng-click="openAddOrEditCurrencyModal()"><i class="fas fa-plus-circle mr-2"></i> Add Currency</button>
+    <button class="btn btn-primary" ng-click="openAddOrEditCurrencyModal()"><i class="fas fa-plus-circle mr-2"></i> {{'CURRENCY_PAGE.ADD_CURRENCY' | translate}}</button>
 </div>
 
 <div class="p-6">
     <div ng-if="currencyService.currencies.length === 0" class="noselect muted pl-5">
-        <span class="hvr-bob"><i class="fas fa-arrow-up"></i></span><span class="ml-3">No currencies saved. You should make one! :) </span>
+        <span class="hvr-bob"><i class="fas fa-arrow-up"></i></span><span class="ml-3">{{'CURRENCY_PAGE.NO_CURRENCY_SAVED' | translate}}</span>
     </div>
 
     <div class="mt-8" style="display:flex;flex-wrap: wrap;">

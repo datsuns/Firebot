@@ -90,6 +90,23 @@
         "DESCRIPTION": "Change the language used for Firebot's interface."
       }
     }
+  },
+  "CURRENCY_PAGE": {
+    "ADD_CURRENCY": "Add Currency",
+    "NO_CURRENCY_SAVED": "No currencies saved. You should make one! :)"
+  },
+  "HOTKEYS_PAGE": {
+    "NEW_HOTKEY": "New Hotkey",
+    "NO_HOTKEYS_SAVED": "No hotkeys saved. You should make one! :)"
+  },
+  "QUOTES_PAGE": {
+    "ADD_QUOTE": "Add Quote",
+    "IMPORT_QUOTES": "Import Quotes",
+    "SEARCH_PLACEHOLDER": "Search quotes...",
+    "NO_QUOTES": "No quotes created yet!"
+  },
+  "SETTINGS_PAGE": {
+    "CLOSE": "Close"
   }
 }
 
