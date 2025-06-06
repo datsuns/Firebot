@@ -9,8 +9,8 @@
                 <div>
 
                     <firebot-setting
-                        name="Viewer Database"
-                        description="Turn on/off the viewer tracking database. This could improve performance in some cases."
+                        name="{{'SETTINGS.DATABASE.VIEWER_DATABASE.NAME' | translate }}"
+                        description="{{'SETTINGS.DATABASE.VIEWER_DATABASE.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'On', false: 'Off' }"
@@ -23,8 +23,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Auto Flag Bots"
-                        description="Prevents known bots from generating stats or showing up in active viewer lists."
+                        name="{{'SETTINGS.DATABASE.AUTO_FLAG_BOTS.NAME' | translate }}"
+                        description="{{'SETTINGS.DATABASE.AUTO_FLAG_BOTS.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'On', false: 'Off' }"
@@ -37,8 +37,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Viewers Table Page Size"
-                        description="Select how many viewers are displayed per page for the Viewers table."
+                        name="{{'SETTINGS.DATABASE.VIEWERS_TABLE_PAGE_SIZE.NAME' | translate }}"
+                        description="{{'SETTINGS.DATABASE.VIEWERS_TABLE_PAGE_SIZE.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="[5,10,15,20,25,30,35,40,45,50,55,60]"
@@ -51,8 +51,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Purge Viewer Data"
-                        description="Sometimes you may want to periodically purge viewer data to clear out inactive viewers."
+                        name="{{'SETTINGS.DATABASE.PURGE_VIEWER_DATA.NAME' | translate }}"
+                        description="{{'SETTINGS.DATABASE.PURGE_VIEWER_DATA.DESCRIPTION' | translate }}"
                     >
                         <firebot-button
                             text="View Purge Options"

@@ -130,6 +130,158 @@
         "NAME": "Open Stream Preview on Launch",
         "DESCRIPTION": "Automatically open the Stream Preview window when Firebot launches."
       }
+    },
+    "TRIGGERS": {
+      "COMMANDS_CATEGORY": "Commands",
+      "DEFAULT_MODE_FOR_NEW_COMMANDS": {
+        "NAME": "Default Mode For New Commands",
+        "DESCRIPTION": "The default command mode to use when creating new commands (Simple vs Advanced)"
+      },
+      "ALLOW_SHARED_CHAT_TO_TRIGGER_COMMANDS": {
+        "NAME": "Allow Shared Chat To Trigger Commands",
+        "DESCRIPTION": "Allow commands to be triggered by chat messages sent in other channels during Twitch Shared Chat"
+      },
+      "EVENTS_CATEGORY": "Events",
+      "IGNORE_RELATED_GIFT_SUB_EVENTS": {
+        "NAME": "Ignore Related Gift Sub Events",
+        "DESCRIPTION": "When this is enabled, Firebot will attempt to ignore subsequent Gift Sub events after a Community Gift Sub event. This means only the Community Sub event would fire instead of the Community Sub event AND an additional Gift Sub event for every recipient."
+      },
+      "UPCOMING_SCHEDULED_AD_BREAK_TRIGGER": {
+        "NAME": "Upcoming Scheduled Ad Break Trigger",
+        "DESCRIPTION": "Use this to set the number of minutes before the next scheduled ad break to trigger the Scheduled Ad Break Starting Soon event, or disable it completely. This may trigger sooner than the configured value at the beginning of a stream, depending on your Twitch Ads Manager settings. NOTE: You must be a Twitch affiliate/partner and have the Twitch Ads Manager enabled in order for this event to trigger."
+      }
+    },
+    "EFFECTS": {
+      "DEFAULT_EFFECT_LABELS": {
+        "NAME": "Default Effect Labels",
+        "DESCRIPTION": "When enabled, Firebot will automatically generate labels for (most) effects that don't have a custom label set."
+      }
+    },
+    "DATABASE": {
+      "VIEWER_DATABASE": {
+        "NAME": "Viewer Database",
+        "DESCRIPTION": "Turn on/off the viewer tracking database. This could improve performance in some cases."
+      },
+      "AUTO_FLAG_BOTS": {
+        "NAME": "Auto Flag Bots",
+        "DESCRIPTION": "Prevents known bots from generating stats or showing up in active viewer lists."
+      },
+      "VIEWERS_TABLE_PAGE_SIZE": {
+        "NAME": "Viewers Table Page Size",
+        "DESCRIPTION": "Select how many viewers are displayed per page for the Viewers table."
+      },
+      "PURGE_VIEWER_DATA": {
+        "NAME": "Purge Viewer Data",
+        "DESCRIPTION": "Sometimes you may want to periodically purge viewer data to clear out inactive viewers."
+      }
+    },
+    "OVERLAY": {
+      "OVERLAY_URL": {
+        "NAME": "Overlay URL",
+        "DESCRIPTION": "Open the Overlay Setup modal to get access to the url and how to set it up."
+      },
+      "OVERLAY_INSTANCES": {
+        "NAME": "Overlay Instances",
+        "DESCRIPTION": "Enable or disable the ability to use multiple overlay instances in your broadcasting software. When on, you can choose which instance to show a video or image effect in."
+      },
+      "FORCE_EFFECTS_TO_CONTINUE": {
+        "NAME": "Force Effects to Continue on Overlay Refresh",
+        "DESCRIPTION": "When refreshing an overlay or using the Clear Effects effect on it, this will force any Play Video or Play Sound effects currently playing on that overlay to continue to the next effect, even if they're set to wait."
+      },
+      "FONT_MANAGEMENT": {
+        "NAME": "Font Management",
+        "DESCRIPTION": "Manage fonts for use with the Show Text effect in the overlay. Any changes to fonts will require restarting Firebot and then refreshing the overlay."
+      }
+    },
+    "INTEGRATIONS": {
+      "CONFIGURE_BUTTON": "Configure",
+      "LINK_BUTTON": "Link",
+      "UNLINK_BUTTON": "Unlink"
+    },
+    "TTS": {
+      "TTS_VOICE": {
+        "NAME": "TTS Voice",
+        "DESCRIPTION": "The voice that is used for the TTS."
+      },
+      "TTS_VOLUME": {
+        "NAME": "TTS Volume",
+        "DESCRIPTION": "The volume at which the TTS speaks."
+      },
+      "TTS_SPEAK_RATE": {
+        "NAME": "TTS Speak Rate",
+        "DESCRIPTION": "The rate at which the TTS speaks: 1 is normal. 0.5 is half as fast. 2 is 2x as fast, etc."
+      },
+      "TEST_TTS": {
+        "NAME": "Test TTS",
+        "DESCRIPTION": "Test the current TTS settings."
+      },
+      "SPEAK_TEST_MESSAGE": "Speak Test Message"
+    },
+    "BACKUPS": {
+      "MAX_BACKUPS": {
+        "NAME": "Max Backups",
+        "DESCRIPTION": "The maximum number of backups to keep. When Firebot makes a new backup, it will delete the oldest if this number has been reached."
+      },
+      "AUTOMATIC_BACKUP_OPTIONS": {
+        "NAME": "Automatic Backup Options",
+        "DESCRIPTION": "Choose what Firebot should ignore in automatic backups."
+      },
+      "AUTOMATIC_BACKUPS": {
+        "NAME": "Automatic Backups",
+        "DESCRIPTION": "Choose when Firebot should make automatic backups."
+      },
+      "MANUAL_BACKUP": {
+        "NAME": "Manual Backup",
+        "DESCRIPTION": "Trigger a manual back up now."
+      },
+      "BACKUP_MANAGEMENT": {
+        "NAME": "Backup Management",
+        "DESCRIPTION": "View, restore, and delete previous backups."
+      },
+      "MOVE_BACKUP_FOLDER": {
+        "NAME": "Move Backup Folder",
+        "DESCRIPTION": "Choose where Firebot stores backups."
+      }
+    },
+    "SCRIPTS": {
+      "CUSTOM_SCRIPTS": {
+        "NAME": "Custom Scripts",
+        "DESCRIPTION": "Firebot supports custom scripts! You must opt-in to use this feature as it is potentially dangerous. Please only run scripts from sources you trust."
+      },
+      "STARTUP_SCRIPTS": {
+        "NAME": "Startup Scripts",
+        "DESCRIPTION": "Startup Scripts are custom scripts that run when Firebot starts. Scripts which add new effects, variables, event types, etc should be loaded here."
+      },
+      "CLEAR_CUSTOM_SCRIPT_CACHE": {
+        "NAME": "Clear Custom Script Cache",
+        "DESCRIPTION": "Whether or not you want custom scripts to be cleared from memory before they are executed. Enabling this helps when actively developing a custom script, otherwise Firebot wont reflect changes to your script until restarted. Everyday users should leave this disabled."
+      }
+    },
+    "ADVANCED": {
+      "DEBUG_MODE": {
+        "NAME": "Debug Mode",
+        "DESCRIPTION": "When Debug Mode is enabled, Firebot will log a lot more information to its log files. This is often useful when troubleshooting an obscure problem."
+      },
+      "WHILE_LOOP": {
+        "NAME": "While Loop",
+        "DESCRIPTION": "Enable or disable the conditional 'While Loop' option in the Loop Effects effect."
+      },
+      "QUOTE_ID_RECALCULATION": {
+        "NAME": "Quote ID Recalculation",
+        "DESCRIPTION": "Quote IDs in Firebot are static, even if a quote before another is deleted. If you would like to recalculate your quote IDs so that there isn't any skipped quote numbers, you can use this option."
+      },
+      "ALLOW_QUOTE_CSV_EXPORT": {
+        "NAME": "Allow Quote .CSV Export",
+        "DESCRIPTION": "Whether or not you want the 'Export as .CSV' button available for quotes on the profile page."
+      },
+      "PERSIST_CUSTOM_VARIABLES": {
+        "NAME": "Persist Custom Variables",
+        "DESCRIPTION": "Whether or not custom variables should be persisted to a file when Firebot closes."
+      },
+      "EXPERIMENTAL_CLIP_PLAYER": {
+        "NAME": "Experimental Clip Player",
+        "DESCRIPTION": "When enabled, Firebot will use an experimental method to play Twitch clips in the overlay that bypasses content warnings. This is an experimental feature and isn't guaranteed to work. If Firebot is unable to play the clip, it will fall back to the default method."
+      }
     }
   },
   "CURRENCY_PAGE": {

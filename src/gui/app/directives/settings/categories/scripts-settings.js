@@ -9,8 +9,8 @@
                 <div>
 
                     <firebot-setting
-                        name="Custom Scripts"
-                        description="Firebot supports custom scripts! You must opt-in to use this feature as it is potentially dangerous. Please only run scripts from sources you trust."
+                        name="{{'SETTINGS.SCRIPTS.CUSTOM_SCRIPTS.NAME' | translate }}"
+                        description="{{'SETTINGS.SCRIPTS.CUSTOM_SCRIPTS.DESCRIPTION' | translate }}"
                     >
                         <setting-description-addon>
                             <div style="margin-top: 10px;">Want to write your own scripts? Learn how <a
@@ -30,8 +30,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Startup Scripts"
-                        description="Startup Scripts are custom scripts that run when Firebot starts. Scripts which add new effects, variables, event types, etc should be loaded here."
+                        name="{{'SETTINGS.SCRIPTS.STARTUP_SCRIPTS.NAME' | translate }}"
+                        description="{{'SETTINGS.SCRIPTS.STARTUP_SCRIPTS.DESCRIPTION' | translate }}"
                     >
                         <firebot-button
                             text="Manage Startup Scripts"
@@ -41,8 +41,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Clear Custom Script Cache"
-                        description="Whether or not you want custom scripts to be cleared from memory before they are executed. Enabling this helps when actively developing a custom script, otherwise Firebot wont reflect changes to your script until restarted. Everyday users should leave this disabled."
+                        name="{{'SETTINGS.SCRIPTS.CLEAR_CUSTOM_SCRIPT_CACHE.NAME' | translate }}"
+                        description="{{'SETTINGS.SCRIPTS.CLEAR_CUSTOM_SCRIPT_CACHE.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'On', false: 'Off' }"

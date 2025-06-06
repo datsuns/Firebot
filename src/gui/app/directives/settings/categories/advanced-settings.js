@@ -9,8 +9,8 @@
                 <div>
 
                     <firebot-setting
-                        name="Debug Mode"
-                        description="When Debug Mode is enabled, Firebot will log a lot more information to its log files. This is often useful when troubleshooting an obscure problem."
+                        name="{{'SETTINGS.ADVANCED.DEBUG_MODE.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.DEBUG_MODE.DESCRIPTION' | translate }}"
                     >
                         <setting-description-addon>
                             <b>Firebot must be restarted for changes to this setting to take effect.</b>
@@ -22,8 +22,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="While Loop"
-                        description="Enable or disable the conditional 'While Loop' option in the Loop Effects effect."
+                        name="{{'SETTINGS.ADVANCED.WHILE_LOOP.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.WHILE_LOOP.DESCRIPTION' | translate }}"
                     >
                         <setting-description-addon>
                             <b>If you aren't careful, you can cause an infinite loop and freeze Firebot.</b>
@@ -35,8 +35,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Quote ID Recalculation"
-                        description="Quote IDs in Firebot are static, even if a quote before another is deleted. If you would like to recalculate your quote IDs so that there isn't any skipped quote numbers, you can use this option."
+                        name="{{'SETTINGS.ADVANCED.QUOTE_ID_RECALCULATION.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.QUOTE_ID_RECALCULATION.DESCRIPTION' | translate }}"
                     >
                         <setting-description-addon>
                             <b>We recommend that you make a backup first, just in case.</b>
@@ -48,8 +48,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Allow Quote .CSV Export"
-                        description="Whether or not you want the 'Export as .CSV' button available for quotes on the profile page."
+                        name="{{'SETTINGS.ADVANCED.ALLOW_QUOTE_CSV_EXPORT.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.ALLOW_QUOTE_CSV_EXPORT.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'On', false: 'Off' }"
@@ -63,8 +63,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Persist Custom Variables"
-                        description="Whether or not custom variables should be persisted to a file when Firebot closes."
+                        name="{{'SETTINGS.ADVANCED.PERSIST_CUSTOM_VARIABLES.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.PERSIST_CUSTOM_VARIABLES.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'On', false: 'Off' }"
@@ -77,8 +77,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Experimental Clip Player"
-                        description="When enabled, Firebot will use an experimental method to play Twitch clips in the overlay that bypasses content warnings. This is an experimental feature and isn't guaranteed to work. If Firebot is unable to play the clip, it will fall back to the default method."
+                        name="{{'SETTINGS.ADVANCED.EXPERIMENTAL_CLIP_PLAYER.NAME' | translate }}"
+                        description="{{'SETTINGS.ADVANCED.EXPERIMENTAL_CLIP_PLAYER.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('UseExperimentalTwitchClipUrlResolver')"
