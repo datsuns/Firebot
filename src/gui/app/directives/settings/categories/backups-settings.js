@@ -9,8 +9,8 @@
                     <div><strong>NOTE: These settings affect ALL user profiles.</strong></div>
 
                     <firebot-setting
-                        name="Max Backups"
-                        description="The maximum number of backups to keep. When Firebot makes a new backup, it will delete the oldest if this number has been reached."
+                        name="{{'SETTINGS.BACKUPS.MAX_BACKUPS.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.MAX_BACKUPS.DESCRIPTION' | translate }}"
                     >
                         <dropdown-select
                             ng-init="currentMaxBackups = settings.getSetting('MaxBackupCount')"
@@ -23,8 +23,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Automatic Backup Options"
-                        description="Choose what Firebot should ignore in automatic backups."
+                        name="{{'SETTINGS.BACKUPS.AUTOMATIC_BACKUP_OPTIONS.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.AUTOMATIC_BACKUP_OPTIONS.DESCRIPTION' | translate }}"
                     >
                         <div>
                         <label class="control-fb control--checkbox"
@@ -44,8 +44,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Automatic Backups"
-                        description="Choose when Firebot should make automatic backups."
+                        name="{{'SETTINGS.BACKUPS.AUTOMATIC_BACKUPS.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.AUTOMATIC_BACKUPS.DESCRIPTION' | translate }}"
                     >
                         <div>
                         <label class="control-fb control--checkbox"
@@ -98,8 +98,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Manual Backup"
-                        description="Trigger a manual back up now."
+                        name="{{'SETTINGS.BACKUPS.MANUAL_BACKUP.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.MANUAL_BACKUP.DESCRIPTION' | translate }}"
                     >
                         <div>
                             <span
@@ -120,8 +120,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Backup Management"
-                        description="View, restore, and delete previous backups."
+                        name="{{'SETTINGS.BACKUPS.BACKUP_MANAGEMENT.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.BACKUP_MANAGEMENT.DESCRIPTION' | translate }}"
                     >
                         <div>
                             <firebot-button
@@ -132,8 +132,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Move Backup Folder"
-                        description="Choose where Firebot stores backups.">
+                        name="{{'SETTINGS.BACKUPS.MOVE_BACKUP_FOLDER.NAME' | translate }}"
+                        description="{{'SETTINGS.BACKUPS.MOVE_BACKUP_FOLDER.DESCRIPTION' | translate }}">
 
                         <setting-description-addon>
                             <div style="margin-top: 10px;"><strong>NOTE</strong>: Changing this setting will copy any existing backups from the current location to the new location. This will overwrite any files with the same name in the new location.</div>

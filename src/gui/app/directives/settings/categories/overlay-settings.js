@@ -9,8 +9,8 @@
                 <div>
 
                     <firebot-setting
-                        name="Overlay URL"
-                        description="Open the Overlay Setup modal to get access to the url and how to set it up."
+                        name="{{'SETTINGS.OVERLAY.OVERLAY_URL.NAME' | translate }}"
+                        description="{{'SETTINGS.OVERLAY.OVERLAY_URL.DESCRIPTION' | translate }}"
                     >
                         <firebot-button
                             text="Get Overlay Path"
@@ -19,8 +19,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Overlay Instances"
-                        description="Enable or disable the ability to use multiple overlay instances in your broadcasting software. When on, you will be able to pick which instance you want a video or image effect to show in. This is useful if you use greenscreen footage that you need to chroma key but don't want to affect your other videos and images."
+                        name="{{'SETTINGS.OVERLAY.OVERLAY_INSTANCES.NAME' | translate }}"
+                        description="{{'SETTINGS.OVERLAY.OVERLAY_INSTANCES.DESCRIPTION' | translate }}"
                     >
                         <span
                             style="padding-right: 10px"
@@ -39,10 +39,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Force Effects to Continue on Overlay Refresh"
-                        description="When refreshing an overlay or using the Clear Effects effect on it, this will force
-                        any Play Video or Play Sound effects currently playing on that overlay to continue to the next effect,
-                        even if they're set to wait."
+                        name="{{'SETTINGS.OVERLAY.FORCE_EFFECTS_TO_CONTINUE.NAME' | translate }}"
+                        description="{{'SETTINGS.OVERLAY.FORCE_EFFECTS_TO_CONTINUE.DESCRIPTION' | translate }}"
                     >
                         <toggle-button
                             toggle-model="settings.getSetting('ForceOverlayEffectsToContinueOnRefresh')"
@@ -55,8 +53,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Font Management"
-                        description="Manage fonts for use with the Show Text effect in the overlay. Any changes to fonts will require a restart to Firebot and then refreshing the overlay."
+                        name="{{'SETTINGS.OVERLAY.FONT_MANAGEMENT.NAME' | translate }}"
+                        description="{{'SETTINGS.OVERLAY.FONT_MANAGEMENT.DESCRIPTION' | translate }}"
                     >
                         <firebot-button
                             text="Manage Fonts"

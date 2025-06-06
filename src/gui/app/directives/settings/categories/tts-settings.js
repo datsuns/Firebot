@@ -9,8 +9,8 @@
                 <div>
 
                     <firebot-setting
-                        name="TTS Voice"
-                        description="The voice that is used for the TTS."
+                        name="{{'SETTINGS.TTS.TTS_VOICE.NAME' | translate }}"
+                        description="{{'SETTINGS.TTS.TTS_VOICE.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="ttsVoiceOptions"
@@ -23,8 +23,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="TTS Volume"
-                        description="The volume at which the TTS speaks."
+                        name="{{'SETTINGS.TTS.TTS_VOLUME.NAME' | translate }}"
+                        description="{{'SETTINGS.TTS.TTS_VOLUME.DESCRIPTION' | translate }}"
                     >
                         <div class="volume-slider-wrapper"  style="width: 75%">
                             <i class="fal fa-volume-down volume-low" style="font-size: 25px"></i>
@@ -37,8 +37,8 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="TTS Speak Rate"
-                        description="The rate at which the TTS speaks: 1 is normal. 0.5 is half as fast. 2 is 2x as fast, etc."
+                        name="{{'SETTINGS.TTS.TTS_SPEAK_RATE.NAME' | translate }}"
+                        description="{{'SETTINGS.TTS.TTS_SPEAK_RATE.DESCRIPTION' | translate }}"
                     >
                         <div class="volume-slider-wrapper" style="width: 75%">
                             <i class="fal fa-turtle volume-low" style="font-size: 25px"></i>
@@ -52,11 +52,11 @@
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Test TTS"
-                        description="Test the current TTS settings."
+                        name="{{'SETTINGS.TTS.TEST_TTS.NAME' | translate }}"
+                        description="{{'SETTINGS.TTS.TEST_TTS.DESCRIPTION' | translate }}"
                     >
                         <firebot-button
-                            text="Speak Test Message"
+                            text="{{'SETTINGS.TTS.SPEAK_TEST_MESSAGE' | translate }}"
                             ng-click="testTTS()"
                         />
                     </firebot-setting>

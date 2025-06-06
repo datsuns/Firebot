@@ -130,6 +130,158 @@
         "NAME": "起動時にストリームプレビューを開く",
         "DESCRIPTION": "Firebot起動時に自動的にストリームプレビューウィンドウを開きます。"
       }
+    },
+    "TRIGGERS": {
+      "COMMANDS_CATEGORY": "コマンド",
+      "DEFAULT_MODE_FOR_NEW_COMMANDS": {
+        "NAME": "新規コマンドのデフォルトモード",
+        "DESCRIPTION": "新しいコマンドを作成する際に使用する既定のモード（シンプル / 上級）"
+      },
+      "ALLOW_SHARED_CHAT_TO_TRIGGER_COMMANDS": {
+        "NAME": "共有チャットからのコマンド実行を許可",
+        "DESCRIPTION": "Twitchの共有チャットで他チャンネルに送信されたメッセージでもコマンドが起動するようにします"
+      },
+      "EVENTS_CATEGORY": "イベント",
+      "IGNORE_RELATED_GIFT_SUB_EVENTS": {
+        "NAME": "関連ギフトサブイベントを無視",
+        "DESCRIPTION": "有効にすると、コミュニティギフトサブの後に発生する個別ギフトサブイベントを無視します。これにより、コミュニティサブイベントのみが発生します。"
+      },
+      "UPCOMING_SCHEDULED_AD_BREAK_TRIGGER": {
+        "NAME": "次の予定広告開始通知",
+        "DESCRIPTION": "次の予定広告開始まで何分前に\"広告開始間近\"イベントを発火させるか設定します。無効にもできます。配信開始直後は設定値より早く発火する場合があります。※ TwitchのAds Managerを有効にしたアフィリエイトまたはパートナーである必要があります。"
+      }
+    },
+    "EFFECTS": {
+      "DEFAULT_EFFECT_LABELS": {
+        "NAME": "既定のエフェクトラベル",
+        "DESCRIPTION": "有効にすると、カスタムラベルがないエフェクトに自動でラベルを生成します。"
+      }
+    },
+    "DATABASE": {
+      "VIEWER_DATABASE": {
+        "NAME": "視聴者データベース",
+        "DESCRIPTION": "視聴者のトラッキングデータベースをオン/オフします。パフォーマンス向上につながる場合があります。"
+      },
+      "AUTO_FLAG_BOTS": {
+        "NAME": "Botの自動判定",
+        "DESCRIPTION": "既知のBotが統計を生成したりアクティブ視聴者一覧に表示されないようにします。"
+      },
+      "VIEWERS_TABLE_PAGE_SIZE": {
+        "NAME": "視聴者表のページサイズ",
+        "DESCRIPTION": "Viewersテーブルで1ページに表示する視聴者数を選択します。"
+      },
+      "PURGE_VIEWER_DATA": {
+        "NAME": "視聴者データの削除",
+        "DESCRIPTION": "不要な視聴者データを定期的に削除したい場合に使用します。"
+      }
+    },
+    "OVERLAY": {
+      "OVERLAY_URL": {
+        "NAME": "オーバーレイ URL",
+        "DESCRIPTION": "オーバーレイ設定モーダルを開き、URL取得や設定方法を確認します。"
+      },
+      "OVERLAY_INSTANCES": {
+        "NAME": "オーバーレイインスタンス",
+        "DESCRIPTION": "配信ソフトで複数のオーバーレイインスタンスを使用できるようにします。オンにすると、どのインスタンスで動画や画像エフェクトを表示するか選択できます。"
+      },
+      "FORCE_EFFECTS_TO_CONTINUE": {
+        "NAME": "オーバーレイ更新時にエフェクトを継続",
+        "DESCRIPTION": "オーバーレイを更新する際やClear Effectsを使用する際に、待機設定されていても再生中の動画/音声エフェクトを次のエフェクトへ進めます。"
+      },
+      "FONT_MANAGEMENT": {
+        "NAME": "フォント管理",
+        "DESCRIPTION": "オーバーレイのShow Textエフェクトで使用するフォントを管理します。変更を反映するにはFirebot再起動後にオーバーレイを更新してください。"
+      }
+    },
+    "INTEGRATIONS": {
+      "CONFIGURE_BUTTON": "設定",
+      "LINK_BUTTON": "リンク",
+      "UNLINK_BUTTON": "解除"
+    },
+    "TTS": {
+      "TTS_VOICE": {
+        "NAME": "TTS音声",
+        "DESCRIPTION": "TTSで使用する音声です。"
+      },
+      "TTS_VOLUME": {
+        "NAME": "TTS音量",
+        "DESCRIPTION": "TTSが話す音量です。"
+      },
+      "TTS_SPEAK_RATE": {
+        "NAME": "TTS速度",
+        "DESCRIPTION": "TTSが話す速さです。1が通常、0.5で半分、2で2倍速。"
+      },
+      "TEST_TTS": {
+        "NAME": "TTSテスト",
+        "DESCRIPTION": "現在のTTS設定をテストします。"
+      },
+      "SPEAK_TEST_MESSAGE": "テストメッセージを再生"
+    },
+    "BACKUPS": {
+      "MAX_BACKUPS": {
+        "NAME": "バックアップの最大数",
+        "DESCRIPTION": "保持するバックアップの最大数です。新しいバックアップ作成時、この数に達していれば最も古いものを削除します。"
+      },
+      "AUTOMATIC_BACKUP_OPTIONS": {
+        "NAME": "自動バックアップの対象",
+        "DESCRIPTION": "自動バックアップで除外する項目を選択します。"
+      },
+      "AUTOMATIC_BACKUPS": {
+        "NAME": "自動バックアップ",
+        "DESCRIPTION": "Firebotが自動バックアップを行うタイミングを設定します。"
+      },
+      "MANUAL_BACKUP": {
+        "NAME": "手動バックアップ",
+        "DESCRIPTION": "今すぐ手動バックアップを実行します。"
+      },
+      "BACKUP_MANAGEMENT": {
+        "NAME": "バックアップ管理",
+        "DESCRIPTION": "過去のバックアップの閲覧、復元、削除を行います。"
+      },
+      "MOVE_BACKUP_FOLDER": {
+        "NAME": "バックアップフォルダーの移動",
+        "DESCRIPTION": "バックアップを保存する場所を変更します。"
+      }
+    },
+    "SCRIPTS": {
+      "CUSTOM_SCRIPTS": {
+        "NAME": "カスタムスクリプト",
+        "DESCRIPTION": "Firebotはカスタムスクリプトに対応しています。危険を伴う可能性があるため、使用するにはオプトインが必要です。信頼できるソースのスクリプトのみ実行してください。"
+      },
+      "STARTUP_SCRIPTS": {
+        "NAME": "起動スクリプト",
+        "DESCRIPTION": "Firebot起動時に実行されるカスタムスクリプトです。新しいエフェクトや変数、イベントタイプなどを追加するスクリプトをここで読み込みます。"
+      },
+      "CLEAR_CUSTOM_SCRIPT_CACHE": {
+        "NAME": "カスタムスクリプトキャッシュのクリア",
+        "DESCRIPTION": "スクリプト実行前にメモリからスクリプトをクリアするかどうかを設定します。スクリプト開発中に変更を即座に反映させたい場合に有効にします。通常は無効のままで構いません。"
+      }
+    },
+    "ADVANCED": {
+      "DEBUG_MODE": {
+        "NAME": "デバッグモード",
+        "DESCRIPTION": "デバッグモードを有効にするとログファイルへより詳細な情報が出力されます。問題解決時に役立ちます。"
+      },
+      "WHILE_LOOP": {
+        "NAME": "While ループ",
+        "DESCRIPTION": "Loop Effectsエフェクトで条件付き'While Loop'オプションを使用するかどうかを切り替えます。"
+      },
+      "QUOTE_ID_RECALCULATION": {
+        "NAME": "引用IDの再計算",
+        "DESCRIPTION": "引用IDは削除しても変動しません。IDの欠番をなくしたい場合に再計算します。"
+      },
+      "ALLOW_QUOTE_CSV_EXPORT": {
+        "NAME": ".CSV形式での引用エクスポートを許可",
+        "DESCRIPTION": "プロフィールページの引用に\".CSVでエクスポート\"ボタンを表示するかどうか。"
+      },
+      "PERSIST_CUSTOM_VARIABLES": {
+        "NAME": "カスタム変数の保存",
+        "DESCRIPTION": "Firebot終了時にカスタム変数をファイルへ保存するかどうか。"
+      },
+      "EXPERIMENTAL_CLIP_PLAYER": {
+        "NAME": "実験的なクリッププレーヤー",
+        "DESCRIPTION": "Twitchクリップをコンテンツ警告なしで再生する実験的な方法を使用します。うまく再生できない場合は従来の方法にフォールバックします。"
+      }
     }
   },
   "CURRENCY_PAGE": {
@@ -159,7 +311,7 @@
       },
       "TRIGGERS": {
         "NAME": "トリガー",
-        "DESCRIPTION": "コマンドやイベントなど、各種トリガーの動作を調整します。"
+        "DESCRIPTION": "コマンドやイベントなど、トリガーの動作を調整します。"
       },
       "EFFECTS": {
         "NAME": "エフェクト",
@@ -178,7 +330,7 @@
         "DESCRIPTION": "Firebotを外部ツールやアプリと連携させます。"
       },
       "TTS": {
-        "NAME": "TTS",
+        "NAME": "読み上げ",
         "DESCRIPTION": "既定のTTS音声に関する設定。"
       },
       "BACKUPS": {
@@ -191,7 +343,7 @@
       },
       "ADVANCED": {
         "NAME": "高度な設定",
-        "DESCRIPTION": "デバッグモードやwhileループなど、上級者向け設定。"
+        "DESCRIPTION": "デバッグモードや while ループなど、上級者向けの設定です。"
       }
     }
   }

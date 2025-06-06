@@ -8,32 +8,32 @@
             template: `
                 <div>
 
-                    <firebot-setting 
-                        name="Import Setup"
-                        description="Import a Firebot Setup (.firebotsetup file) made by someone else!"
+                    <firebot-setting
+                        name="{{'SETTINGS.SETUPS.IMPORT_SETUP.NAME' | translate }}"
+                        description="{{'SETTINGS.SETUPS.IMPORT_SETUP.DESCRIPTION' | translate }}"
                     >
-                        <firebot-button 
-                            text="Import Setup"
+                        <firebot-button
+                            text="{{'SETTINGS.SETUPS.IMPORT_SETUP.BUTTON' | translate }}"
                             ng-click="showImportSetupModal()"
                         />
                     </firebot-setting>
 
-                    <firebot-setting 
-                        name="Create Setup"
-                        description="Create a new Firebot Setup (a collection of commands, events, currencies, etc) and share it with others!"
+                    <firebot-setting
+                        name="{{'SETTINGS.SETUPS.CREATE_SETUP.NAME' | translate }}"
+                        description="{{'SETTINGS.SETUPS.CREATE_SETUP.DESCRIPTION' | translate }}"
                     >
-                        <firebot-button 
-                            text="Create New Setup"
+                        <firebot-button
+                            text="{{'SETTINGS.SETUPS.CREATE_SETUP.BUTTON' | translate }}"
                             ng-click="showCreateSetupModal()"
                         />
                     </firebot-setting>
 
-                    <firebot-setting 
-                        name="Remove Setup"
-                        description="Select a Setup file to have Firebot find and remove all matching components (commands, events, etc) currently saved for you. Useful if you want to completely remove a previously imported Setup."
+                    <firebot-setting
+                        name="{{'SETTINGS.SETUPS.REMOVE_SETUP.NAME' | translate }}"
+                        description="{{'SETTINGS.SETUPS.REMOVE_SETUP.DESCRIPTION' | translate }}"
                     >
-                        <firebot-button 
-                            text="Remove Setup"
+                        <firebot-button
+                            text="{{'SETTINGS.SETUPS.REMOVE_SETUP.BUTTON' | translate }}"
                             ng-click="showRemoveSetupModal()"
                         />
                     </firebot-setting>

@@ -8,11 +8,11 @@
             template: `
                 <div>
                     <firebot-setting-category
-                        name="Commands"
+                        name="{{'SETTINGS.TRIGGERS.COMMANDS_CATEGORY' | translate}}"
                     />
                     <firebot-setting
-                        name="Default Mode For New Commands"
-                        description="The default command mode to use when creating new commands (Simple vs Advanced)"
+                        name="{{'SETTINGS.TRIGGERS.DEFAULT_MODE_FOR_NEW_COMMANDS.NAME' | translate }}"
+                        description="{{'SETTINGS.TRIGGERS.DEFAULT_MODE_FOR_NEW_COMMANDS.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'Advanced', false: 'Simple' }"
@@ -20,13 +20,13 @@
                             selected="selectedCmdMode"
                             on-update="settings.saveSetting('DefaultToAdvancedCommandMode', option === 'true')"
                             right-justify="true"
-                            aria-label="Choose your Default Mode For New Commands"
+                            aria-label="{{'SETTINGS.TRIGGERS.DEFAULT_MODE_FOR_NEW_COMMANDS.NAME' | translate }}"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Allow Shared Chat To Trigger Commands"
-                        description="Allow commands to be triggered by chat messages sent in other channels during Twitch Shared Chat"
+                        name="{{'SETTINGS.TRIGGERS.ALLOW_SHARED_CHAT_TO_TRIGGER_COMMANDS.NAME' | translate }}"
+                        description="{{'SETTINGS.TRIGGERS.ALLOW_SHARED_CHAT_TO_TRIGGER_COMMANDS.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'Yes', false: 'No' }"
@@ -34,17 +34,17 @@
                             selected="allowSharedChatCommands"
                             on-update="settings.saveSetting('AllowCommandsInSharedChat', option === 'true')"
                             right-justify="true"
-                            aria-label="Allow Shared Chat To Trigger Commands"
+                            aria-label="{{'SETTINGS.TRIGGERS.ALLOW_SHARED_CHAT_TO_TRIGGER_COMMANDS.NAME' | translate }}"
                         />
                     </firebot-setting>
 
                     <firebot-setting-category
-                        name="Events"
+                        name="{{'SETTINGS.TRIGGERS.EVENTS_CATEGORY' | translate}}"
                         pad-top="true"
                     />
                     <firebot-setting
-                        name="Ignore Related Gift Sub Events"
-                        description="When this is enabled, Firebot will attempt to ignore subsequent Gift Sub events after a Community Gift Sub event. This means only the Community Sub event would fire instead of the Community Sub event AND an additional Gift Sub event for every recipient."
+                        name="{{'SETTINGS.TRIGGERS.IGNORE_RELATED_GIFT_SUB_EVENTS.NAME' | translate }}"
+                        description="{{'SETTINGS.TRIGGERS.IGNORE_RELATED_GIFT_SUB_EVENTS.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ true: 'Yes', false: 'No' }"
@@ -52,13 +52,13 @@
                             selected="ignoreSubEvents"
                             on-update="settings.saveSetting('IgnoreSubsequentSubEventsAfterCommunitySub', option === 'true')"
                             right-justify="true"
-                            aria-label="enable or disable Ignore Related Gift Sub Events"
+                            aria-label="{{'SETTINGS.TRIGGERS.IGNORE_RELATED_GIFT_SUB_EVENTS.NAME' | translate }}"
                         />
                     </firebot-setting>
 
                     <firebot-setting
-                        name="Upcoming Scheduled Ad Break Trigger"
-                        description="Use this to set the number of minutes before the next scheduled ad break to trigger the Scheduled Ad Break Starting Soon event, or disable it completely. This may trigger sooner than the configured value at the beginning of a stream, depending on your Twitch Ads Manager settings. NOTE: You must be a Twitch affiliate/partner and have the Twitch Ads Manager enabled in order for this event to trigger."
+                        name="{{'SETTINGS.TRIGGERS.UPCOMING_SCHEDULED_AD_BREAK_TRIGGER.NAME' | translate }}"
+                        description="{{'SETTINGS.TRIGGERS.UPCOMING_SCHEDULED_AD_BREAK_TRIGGER.DESCRIPTION' | translate }}"
                     >
                         <firebot-select
                             options="{ 0: 'Disabled', 1: '1 minute', 3: '3 minutes', 5: '5 minutes', 10: '10 minutes', 15: '15 minutes', 20: '20 minutes' }"
@@ -66,7 +66,7 @@
                             selected="triggerUpcomingAdBreakMinutes"
                             on-update="settings.saveSetting('TriggerUpcomingAdBreakMinutes', option)"
                             right-justify="true"
-                            aria-label="Choose your Upcoming Scheduled Ad Break Trigger"
+                            aria-label="{{'SETTINGS.TRIGGERS.UPCOMING_SCHEDULED_AD_BREAK_TRIGGER.NAME' | translate }}"
                         />
                     </firebot-setting>
                 </div>

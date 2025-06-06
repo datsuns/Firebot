@@ -22,19 +22,18 @@
                   class="btn btn-default"
                   ng-show="integration.configurable"
                   ng-click="integrations.openIntegrationSettings(integration.id)"
-                  aria-label="Configure {{integration.name}}"
+                  aria-label="{{'SETTINGS.INTEGRATIONS.CONFIGURE_BUTTON' | translate }} {{integration.name}}"
                 >
-                  Configure
+                  {{'SETTINGS.INTEGRATIONS.CONFIGURE_BUTTON' | translate }}
                 </button>
                 <button
                   class="btn btn-default"
                   ng-show="integration.linkType === 'auth' || integration.linkType === 'id' || integration.linkType === 'other'"
                   ng-click="integrations.toggleLinkforIntegration(integration.id)"
-                  aria-label="{{integrations.integrationIsLinked(integration.id) ? 'Unlink'
-                  : 'Link'}} {{integration.name}}"
+                  aria-label="{{integrations.integrationIsLinked(integration.id) ? ('SETTINGS.INTEGRATIONS.UNLINK_BUTTON' | translate) : ('SETTINGS.INTEGRATIONS.LINK_BUTTON' | translate)}} {{integration.name}}"
                 >
-                  {{integrations.integrationIsLinked(integration.id) ? 'Unlink'
-                  : 'Link'}}
+                  {{integrations.integrationIsLinked(integration.id) ? ('SETTINGS.INTEGRATIONS.UNLINK_BUTTON' | translate)
+                  : ('SETTINGS.INTEGRATIONS.LINK_BUTTON' | translate)}}
                 </button>
               </div>
             </div>
